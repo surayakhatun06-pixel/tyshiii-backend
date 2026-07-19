@@ -1,0 +1,22 @@
+{
+  "name": "tyshiii-backend",
+  "version": "1.0.0",
+  "description": "Backend that stores and streams videos through a private Telegram channel",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "generate-session": "node generateSession.js"
+  },
+  "dependencies": {
+    "telegram": "^2.22.2",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "input": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
