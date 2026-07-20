@@ -107,7 +107,7 @@ app.get("/stream/:id", requireReady, async (req, res) => {
 
     const iter = client.iterDownload({
       file: message.media,
-      offset: BigInt(start),
+      offset: bigInt(start),
       limit: end - start + 1,
       requestSize: 512 * 1024,
     });
