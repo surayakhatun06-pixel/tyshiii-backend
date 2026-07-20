@@ -11,7 +11,7 @@ const cors = require("cors");
 const { TelegramClient } = require("telegram");
 const { StringSession } = require("telegram/sessions");
 const { Api } = require("telegram");
-
+const bigInt = require("big-integer");
 const PORT = process.env.PORT || 3000;
 const apiId = parseInt(process.env.TELEGRAM_API_ID, 10);
 const apiHash = process.env.TELEGRAM_API_HASH;
